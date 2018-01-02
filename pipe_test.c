@@ -29,6 +29,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifdef __GNUC__
+#pragma GCC diagnostic ignored "-Wunused-result"
+#endif
+
 #define UNUSED_PARAMETER(var) (var) = (var)
 
 // All this hackery is just to get asserts to work in release build.
